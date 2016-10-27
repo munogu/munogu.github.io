@@ -4,25 +4,36 @@
   <meta charset="UTF-8">
   <title>Munogu</title>
   <style>
-  #content {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  html,
+  body {
+    height: 100%;
+    margin: 0;
   }
-  #inner {
-    position: relative;
-    top: -50%;
-    left: -50%;
+  #content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  a {
+    color: #000;
   }
   </style>
 </head>
 <body>
   <div id="content">
-    <div id="inner">
-      <img src="logo.png" width="100" height="100" alt="Munogu Logo">
-    </div>
+    <img src="https://munogu.com/logo.png" width="100" height="100" alt="Munogu Logo">
+    <a href="mailto:hello@munogu.com">hello@munogu.com</a>
   </div>
 </body>
 </html>
